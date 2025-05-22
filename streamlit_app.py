@@ -46,5 +46,7 @@ if ingredients_list:
         smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + search_on)
         sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
+# 주문 제출 버튼
+time_to_insert = st.button('Submit Order')
 
 
